@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMUS AETHER — The Sovereign Tier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Dynamic Background Elements -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- Sovereign Floating Navigation -->
+    <nav id="navbar">
+        <a href="#" class="logo">
+            <div class="logo-icon"><i data-lucide="crown"></i></div>
+            <span>PRIMUS<span>AETHER</span></span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home">Sovereign</a></li>
+            <li><a href="#specialized">Bespoke</a></li>
+            <li><a href="#apothecary">Refined</a></li>
+            <li><a href="#membership">Membership</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="portal-btn">Access Elite Portal</button>
+            <div class="cart-wrapper">
+                <span class="cart-count">0</span>
+                <i data-lucide="shopping-bag" class="cart-icon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Immersive Hero -->
+    <header id="home" class="hero">
+        <div class="container hero-content">
+            <span class="hero-tagline">Exclusively Curated for the Discerning</span>
+            <h1 class="hero-title">Healthcare <br><span>Untethered.</span></h1>
+            <p class="hero-desc">The world's most sophisticated medical concierge. Merging high-clinical precision with a personalized human experience that defines the new gold standard.</p>
+            <div class="hero-btns">
+                <button class="btn-luxe btn-primary">Begin Your Journey</button>
+                <button class="btn-luxe btn-outline">Consult Apothecary</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bento Excellence Section -->
+    <section id="specialized" class="bento-section">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow-gold">Excellence Defined</span>
+                <h2 class="section-title">A Higher Form of Care</h2>
+            </div>
+            <div class="bento-grid">
+                <!-- Large Feature Card -->
+                <div class="bento-card card-large">
+                    <div class="card-img-bg" style="background-image: url('service.png');"></div>
+                    <i data-lucide="zap" class="card-icon"></i>
+                    <h3 class="card-title">Quantum Logistics</h3>
+                    <p class="card-desc">30-minute delivery precision powered by our elite priority routing network across the city. No delays, only results.</p>
+                </div>
+                <!-- Small Feature Card -->
+                <div class="bento-card">
+                    <i data-lucide="heart-pulse" class="card-icon"></i>
+                    <h3 class="card-title">Vitality Pro</h3>
+                    <p class="card-desc">Advanced biometrics monitoring with real-time health concierge alerts.</p>
+                </div>
+                <!-- Image Focus Card -->
+                <div class="bento-card">
+                    <div class="card-img-bg" style="background-image: url('ayurveda.png');"></div>
+                    <i data-lucide="leaf" class="card-icon"></i>
+                    <h3 class="card-title">Ancient Wisdom</h3>
+                    <p class="card-desc">Rare clinical Ayurvedic formulations exclusively bottled for Primus Elite.</p>
+                </div>
+                <!-- Large Feature Card 2 -->
+                <div class="bento-card card-large">
+                    <div class="card-img-bg" style="background-image: url('devices.png');"></div>
+                    <i data-lucide="microscope" class="card-icon"></i>
+                    <h3 class="card-title">Molecular Diagnostics</h3>
+                    <p class="card-desc">Access to state-of-the-art diagnostic gear at home, synced with your dedicated personal physician 24/7.</p>
+                </div>
+                <!-- Small Feature Card 2 -->
+                <div class="bento-card">
+                    <i data-lucide="shield-check" class="card-icon"></i>
+                    <h3 class="card-title">Ironclad Privacy</h3>
+                    <p class="card-desc">Encrypted records and discrete, unbranded luxury packaging.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apothecary Section -->
+    <section id="apothecary" class="apothecary">
+        <div class="scroll-ticker">
+            <div class="ticker-text">
+                REFINED &bull; CLINICAL &bull; BESPOKE &bull; SOVEREIGN &bull; PURE &bull; EXCLUSIVE &bull; REFINED &bull; CLINICAL &bull; BESPOKE &bull; SOVEREIGN &bull; PURE &bull; EXCLUSIVE &bull; REFINED &bull; CLINICAL &bull; BESPOKE &bull; SOVEREIGN &bull; PURE &bull; EXCLUSIVE
+            </div>
+        </div>
+        <div class="container">
+            <div class="section-head central">
+                <span class="eyebrow-gold">The Selection</span>
+                <h2 class="section-title">Essential Apothecary</h2>
+                <div class="filter-bar-luxe">
+                    <button class="filter-btn active" data-category="all">The Whole Collection</button>
+                    <button class="filter-btn" data-category="medicines">Clinical Rx</button>
+                    <button class="filter-btn" data-category="supplements">Vitality Pro</button>
+                    <button class="filter-btn" data-category="devices">Diagnostics</button>
+                </div>
+            </div>
+            <div class="products-grid" id="eliteGrid">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Plans -->
+    <section id="membership" class="membership">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow-gold">Membership Tier</span>
+                <h2 class="section-title">Elevated Tiers of Health</h2>
+            </div>
+            <div class="plans-wrapper">
+                <!-- Silver -->
+                <div class="plan-card">
+                    <span class="plan-badge">Aura Tier</span>
+                    <h3 class="plan-title">AURA SILVER</h3>
+                    <p class="plan-price">₹1,499<span>/mo</span></p>
+                    <ul class="plan-features">
+                        <li><i data-lucide="check"></i> Priority Same-Day Dispatch</li>
+                        <li><i data-lucide="check"></i> 15% Elite Concession</li>
+                        <li><i data-lucide="check"></i> Dedicated Support Line</li>
+                        <li><i data-lucide="check"></i> Digital Health Locker</li>
+                    </ul>
+                    <button class="plan-cta">Select Aura</button>
+                </div>
+                <!-- Platinum -->
+                <div class="plan-card featured">
+                    <span class="plan-badge">Sovereign Tier</span>
+                    <h3 class="plan-title">SOVEREIGN PLATINUM</h3>
+                    <p class="plan-price">₹9,999<span>/mo</span></p>
+                    <ul class="plan-features">
+                        <li><i data-lucide="check"></i> 30-Minute Concierge Delivery</li>
+                        <li><i data-lucide="check"></i> 40% Elite Concession</li>
+                        <li><i data-lucide="check"></i> 24/7 Dedicated Physician</li>
+                        <li><i data-lucide="check"></i> Bi-Weekly Health Audit</li>
+                        <li><i data-lucide="check"></i> Unlimited Tele-Link Access</li>
+                    </ul>
+                    <button class="plan-cta">Join Sovereign</button>
+                </div>
+                <!-- Gold -->
+                <div class="plan-card">
+                    <span class="plan-badge">Prestige Tier</span>
+                    <h3 class="plan-title">PRESTIGE GOLD</h3>
+                    <p class="plan-price">₹3,999<span>/mo</span></p>
+                    <ul class="plan-features">
+                        <li><i data-lucide="check"></i> 2-Hour Express Delivery</li>
+                        <li><i data-lucide="check"></i> 25% Elite Concession</li>
+                        <li><i data-lucide="check"></i> Weekly Video Consultation</li>
+                        <li><i data-lucide="check"></i> Priority WhatsApp Portal</li>
+                    </ul>
+                    <button class="plan-cta">Select Prestige</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sovereign Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="f-grid">
+                <div class="f-col">
+                    <a href="#" class="logo">
+                        <div class="logo-icon"><i data-lucide="crown"></i></div>
+                        <span>PRIMUS<span>AETHER</span></span>
+                    </a>
+                    <p style="margin-top: 2rem; color: rgba(255,255,255,0.4); font-weight: 300; max-width: 350px;">The pinnacle of clinical care. We believe healthcare should be as exclusive and refined as the individuals we serve.</p>
+                </div>
+                <div class="f-col">
+                    <h4 class="f-title">Exploration</h4>
+                    <ul class="f-links">
+                        <li><a href="#">The Sovereign Way</a></li>
+                        <li><a href="#">Bespoke Apothecary</a></li>
+                        <li><a href="#">Elite Membership</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h4 class="f-title">Elite Support</h4>
+                    <ul class="f-links">
+                        <li><a href="#">Private Portal</a></li>
+                        <li><a href="#">Concierge Tracking</a></li>
+                        <li><a href="#">Clinical Hotline</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <div class="contact-box">
+                        <h3 class="luxury-serif">Sovereign Line</h3>
+                        <a href="tel:+919876543210" style="font-size: 1.5rem; color: var(--gold-glow); font-weight: 700; text-decoration: none;">+91 98765 43210</a>
+                        <p style="margin-top: 1rem; font-size: 0.8rem; letter-spacing: 2px; opacity: 0.5;">24/7 ELITE ACCESS</p>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 3rem; font-size: 0.8rem; font-weight: 300; opacity: 0.4;">
+                <p>&copy; 2026 Primus Aether. All Rights Reserved.</p>
+                <div style="display: flex; gap: 2rem;">
+                    <a href="#" style="color: #fff; text-decoration: none;">Privacy</a>
+                    <a href="#" style="color: #fff; text-decoration: none;">Sovereign Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
