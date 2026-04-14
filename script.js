@@ -88,6 +88,44 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
     });
 });
 
+// Mobile Navigation
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileNav.classList.toggle('open');
+    document.body.classList.toggle('nav-open');
+    lucide.createIcons();
+});
+
+function closeMobileNav() {
+    hamburger.classList.remove('active');
+    mobileNav.classList.remove('open');
+    document.body.classList.remove('nav-open');
+}
+
+// Floating WhatsApp Button
+const floatWhatsapp = document.getElementById('floatWhatsapp');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        floatWhatsapp.classList.add('visible');
+    } else {
+        floatWhatsapp.classList.remove('visible');
+    }
+}, { passive: true });
+
+// FAQ Accordion
+document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+        lucide.createIcons();
+    });
+});
+
 // Smooth Scroll Logic
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
